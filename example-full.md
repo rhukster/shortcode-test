@@ -4,6 +4,21 @@ When creating content in **Grav**, you often need to display different types of 
 
 Grav uses a **smart-caching** system that automatically creates in-cache copies of the dynamically generated media when necessary. This way all subsequent requests can use the cached version instead of having to generate the media all over again.
 
+# Shortcode Tabs
+
+[ui-tabs position='top-left shadow' active='0' theme='lite' more='bunch of stuff']
+[ui-tab title='Twig']
+```
+{{ page.media['sample-image.jpg'].url }}
+```
+[/ui-tab]
+[ui-tab title='HTML Code']
+```
+{{ page.media['sample-image.jpg'].url|e }}
+```
+[/ui-tab]
+[/ui-tabs]
+
 ## Supported Media Files
 
 The following media file types are supported natively by Grav. Additional support for media files and streaming embeds may be added via plugins.
@@ -86,7 +101,7 @@ These actions are available for all media types.
 
 # Shortcode Testing!!!!
 
-this is regular code and [u]this is underlined text[/u] and this is [blue]blue text[/blue]
+this is regular code and [u]this is underlined text[/u] and this is [color=blue]blue text[/color]
 
 
 ##### html([title][, alt][, classes])

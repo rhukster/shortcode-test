@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "741b59dbccfb4c1c847592cb1c2280e2",
-    "content-hash": "31cde88132dab8d6d7b9f23ab6fca1d6",
+    "hash": "3887335257eba98124c1fd27abefc851",
+    "content-hash": "7ebb76ecd86165087e75f3607de43233",
     "packages": [
         {
             "name": "canteen/parser",
@@ -181,62 +181,65 @@
             "time": "2015-11-01 10:19:22"
         },
         {
-            "name": "thunderer/shortcode",
-            "version": "v0.5.2",
+            "name": "maiorano84/shortcodes",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thunderer/Shortcode.git",
-                "reference": "69b260050bf28c3307205d768d0a5434517fae03"
+                "url": "https://github.com/rhukster/shortcodes.git",
+                "reference": "f499dc47fceea13a0d2e25d5a456947cb65e2636"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thunderer/Shortcode/zipball/69b260050bf28c3307205d768d0a5434517fae03",
-                "reference": "69b260050bf28c3307205d768d0a5434517fae03",
+                "url": "https://api.github.com/repos/rhukster/shortcodes/zipball/f499dc47fceea13a0d2e25d5a456947cb65e2636",
+                "reference": "f499dc47fceea13a0d2e25d5a456947cb65e2636",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3"
+                "php": ">=5.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.1"
-            },
-            "suggest": {
-                "ext-dom": "if you want to use XML serializer",
-                "ext-json": "if you want to use JSON serializer",
-                "symfony/yaml": "if you want to use YAML serializer"
+                "phpunit/phpunit": "~4.6"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Thunder\\Shortcode\\": "src/",
-                    "Thunder\\Shortcode\\Tests\\": "tests/"
+                    "Maiorano\\Shortcodes\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "classmap": [
+                    "tests/TestCase.php"
+                ]
+            },
             "license": [
-                "MIT"
+                "GPL-2.0"
             ],
             "authors": [
                 {
-                    "name": "Tomasz Kowalczyk",
-                    "email": "tomasz@kowalczyk.cc"
+                    "name": "Matt Maiorano",
+                    "email": "maiorano84@hotmail.com",
+                    "homepage": "http://mattmaiorano.com",
+                    "role": "Developer"
                 }
             ],
-            "description": "Advanced shortcode (BBCode) parser and engine for PHP",
+            "description": "Implement Shortcode syntax anywhere",
             "keywords": [
-                "bbcode",
-                "engine",
                 "library",
-                "parser",
-                "shortcode"
+                "manager",
+                "shortcode",
+                "wordpress"
             ],
-            "time": "2016-01-20 17:26:19"
+            "support": {
+                "source": "https://github.com/rhukster/shortcodes/tree/v1.2.2"
+            },
+            "time": "2015-04-27 03:59:36"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "maiorano84/shortcodes": 20,
         "canteen/profiler": 20,
         "erusev/parsedown-extra": 20
     },

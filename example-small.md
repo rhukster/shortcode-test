@@ -51,4 +51,4 @@ This returns **raw url path** to the media.
 
 # Shortcode Testing!!!!
 
-this is regular code and [u]this is underlined text[/u] and this is [blue]blue text[/blue]
+this is regular code and [u]this is underlined text[/u] and this is [color='#f90']blue text[/color]

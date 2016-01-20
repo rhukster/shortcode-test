@@ -1,6 +1,12 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rhukster/shortcodes"
+        }
+    ],
     "require": {
-        "thunderer/shortcode": "~0.5",
+        "maiorano84/shortcodes" : "dev-master",
         "canteen/profiler": "dev-master",
         "erusev/parsedown-extra": "dev-master"
     }
