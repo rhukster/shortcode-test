@@ -1,0 +1,7 @@
+{
+    "require": {
+        "thunderer/shortcode": "~0.5",
+        "canteen/profiler": "dev-master",
+        "erusev/parsedown-extra": "dev-master"
+    }
+}
