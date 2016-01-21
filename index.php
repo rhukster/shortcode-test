@@ -5,10 +5,13 @@ require_once('vendor/autoload.php');
 use Canteen\Profiler\Profiler;
 use Thunder\Shortcode\HandlerContainer\HandlerContainer;
 use Thunder\Shortcode\Parser\RegexParser;
+use Thunder\Shortcode\Parser\WordpressParser;
 use Thunder\Shortcode\Parser\RegularParser;
 use Thunder\Shortcode\Processor\Processor;
 use Thunder\Shortcode\Shortcode\ShortcodeInterface;
 use Thunder\Shortcode\Syntax\CommonSyntax;
+
+mb_internal_encoding("UTF-8");
 
 $profiler = new Profiler();
 
