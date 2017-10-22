@@ -1,3 +1,3 @@
 # shortcode-test
 
-for testing only
+for testing only.
